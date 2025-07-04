@@ -12,22 +12,26 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Link from 'next/link';
 
 const carouselItems = [
   {
     image: "/carousel1.png",
+    href:"/Symptom_checker",
     title: "Symptom checker",
     description:
       "Chat naturally with and get guided to the next best step for your health, tailored just for you.",
   },
   {
     image: "/carousel2.png",
+    href:"/teleconsultation",
     title: "Video call with a doctor",
     description:
       "Consult a licensed doctor for a diagnosis, get prescriptions, and enjoy medicine delivery—all from the comfort of home, hassle-free.",
   },
   {
     image: "/carousel3.png",
+    href:"/Doctor_chat",
     title: "Doctor chat",
     description:
       "Text with a certified doctor for quick answers, advice, and peace of mind—anytime.",
@@ -120,6 +124,8 @@ export default function DigitalHealthCarousel() {
                 </Typography>
 
                 <Button
+                  component={Link}
+                   href={item.href}  
                   variant="contained"
                   sx={{
                     backgroundColor: "#00796b",

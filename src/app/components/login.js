@@ -141,7 +141,7 @@ export default function Login() {
         <Box mt={3} textAlign="center" fontSize="1rem">
           Don't have an account?{" "}
           <Link
-            href="/Promocode"
+            href="/register"
             underline="hover"
             sx={{ fontWeight: 600, color: "#00675B" }}
           >

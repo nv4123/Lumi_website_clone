@@ -74,6 +74,8 @@ export default function Assistant() {
       </Stack>
 
       <Button
+        
+        href="/login"
         variant="contained"
         sx={{
           backgroundColor: "#00796b",

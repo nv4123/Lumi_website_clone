@@ -1,6 +1,8 @@
 "use client";
 import { Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
+import Link from 'next/link';
+
 
 export default function Docchat() {
   return (
@@ -70,6 +72,8 @@ export default function Docchat() {
         </Typography>
 
         <Button
+          component={Link}
+          href="/Doctor_chat"
           variant="contained"
           sx={{
             backgroundColor: "#00796b",
